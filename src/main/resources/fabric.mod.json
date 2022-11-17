@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "organized_fights",
+  "version": "${version}",
+  "name": "Organized_fights",
+  "description": "Nametags overwrite mob AI to attack all mobs with a different name",
+  "authors": [
+    "opfromthestart"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/organized_fights/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "organized_fights.organized_fights.client.Organized_fightsClient"
+    ],
+    "main": [
+      "organized_fights.organized_fights.Organized_fights"
+    ]
+  },
+  "mixins": [
+    "organized_fights.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
