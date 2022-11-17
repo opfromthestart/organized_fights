@@ -14,8 +14,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import organized_fights.organized_fights.HasTargetSelector;
 import organized_fights.organized_fights.TargetDiffGoal;
+import organized_fights.organized_fights.wrap_interface.HasTargetSelector;
 
 @Mixin(Entity.class)
 public abstract class EntityMixin {
@@ -48,11 +48,11 @@ public abstract class EntityMixin {
         if (thi instanceof PhantomEntity) {
             HasTargetSelector thi2 = (HasTargetSelector) this;
 
-                for (PrioritizedGoal g : thi2.getGoalSelector().getGoals()) {
+                //for (PrioritizedGoal g : thi2.getGoalSelector().getGoals()) {
                     //System.out.print(g.getPriority()+" ");
                     //System.out.print(g.canStart() + " ");
                     //System.out.println(g.shouldContinue());
-                }
+                //}
 
             /*
             if (((PhantomEntity) thi).getTarget() != null) {
@@ -64,4 +64,5 @@ public abstract class EntityMixin {
              */
         }
     }
+
 }

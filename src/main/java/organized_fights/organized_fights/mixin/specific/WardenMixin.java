@@ -1,4 +1,4 @@
-package organized_fights.organized_fights.mixin;
+package organized_fights.organized_fights.mixin.specific;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ai.WardenAngerManager;
